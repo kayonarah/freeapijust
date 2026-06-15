@@ -1,0 +1,23 @@
+{
+  "name": "freeapijust",
+  "version": "0.1.0",
+  "description": "OpenAI-compatible gateway that routes across free-tier LLM APIs with automatic fallback.",
+  "type": "module",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "node --watch src/server.js",
+    "check": "node --check src/server.js && node --check src/router.js && node --check src/providers.js"
+  },
+  "keywords": [
+    "llm",
+    "ai-gateway",
+    "openai-compatible",
+    "fallback",
+    "free-tier"
+  ],
+  "license": "MIT",
+  "engines": {
+    "node": ">=20"
+  }
+}
