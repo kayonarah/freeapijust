@@ -1,0 +1,101 @@
+[
+  {
+    "id": "openrouter-free",
+    "name": "OpenRouter Free Models",
+    "baseUrl": "https://openrouter.ai/api/v1",
+    "apiKeyEnv": "OPENROUTER_API_KEY",
+    "models": ["openrouter/free"],
+    "priority": 10,
+    "rpm": 50,
+    "dailyTokenLimit": 50000,
+    "enabled": true
+  },
+  {
+    "id": "groq",
+    "name": "Groq Cloud",
+    "baseUrl": "https://api.groq.com/openai/v1",
+    "apiKeyEnv": "GROQ_API_KEY",
+    "models": ["llama-3.1-8b-instant", "openai/gpt-oss-20b"],
+    "priority": 20,
+    "rpm": 30,
+    "dailyTokenLimit": 100000,
+    "enabled": true
+  },
+  {
+    "id": "cerebras",
+    "name": "Cerebras Inference",
+    "baseUrl": "https://api.cerebras.ai/v1",
+    "apiKeyEnv": "CEREBRAS_API_KEY",
+    "models": ["llama3.1-8b"],
+    "priority": 30,
+    "rpm": 30,
+    "dailyTokenLimit": 1000000,
+    "enabled": true
+  },
+  {
+    "id": "mistral",
+    "name": "Mistral La Plateforme",
+    "baseUrl": "https://api.mistral.ai/v1",
+    "apiKeyEnv": "MISTRAL_API_KEY",
+    "models": ["mistral-small-latest"],
+    "priority": 40,
+    "rpm": 60,
+    "dailyTokenLimit": 1000000,
+    "enabled": true
+  },
+  {
+    "id": "github-models",
+    "name": "GitHub Models",
+    "baseUrl": "https://models.github.ai/inference",
+    "apiKeyEnv": "GITHUB_TOKEN",
+    "models": ["openai/gpt-4.1-mini"],
+    "priority": 50,
+    "rpm": 20,
+    "dailyTokenLimit": 50000,
+    "enabled": true
+  },
+  {
+    "id": "gemini-openai",
+    "name": "Google Gemini OpenAI-compatible API",
+    "baseUrl": "https://generativelanguage.googleapis.com/v1beta/openai",
+    "apiKeyEnv": "GEMINI_API_KEY",
+    "models": ["gemini-2.5-flash-lite"],
+    "priority": 60,
+    "rpm": 15,
+    "dailyTokenLimit": 100000,
+    "enabled": true
+  },
+  {
+    "id": "nvidia-nim",
+    "name": "NVIDIA NIM",
+    "baseUrl": "https://integrate.api.nvidia.com/v1",
+    "apiKeyEnv": "NVIDIA_API_KEY",
+    "models": ["meta/llama-3.1-8b-instruct"],
+    "priority": 70,
+    "rpm": 20,
+    "dailyTokenLimit": 50000,
+    "enabled": true
+  },
+  {
+    "id": "zai",
+    "name": "Z.ai GLM",
+    "baseUrl": "https://open.bigmodel.cn/api/paas/v4",
+    "apiKeyEnv": "ZAI_API_KEY",
+    "models": ["glm-4.5-flash"],
+    "priority": 80,
+    "rpm": 10,
+    "dailyTokenLimit": 50000,
+    "enabled": true
+  },
+  {
+    "id": "ollama-local",
+    "name": "Local Ollama",
+    "baseUrl": "http://localhost:11434/v1",
+    "apiKeyEnv": null,
+    "models": ["llama3.2"],
+    "priority": 90,
+    "rpm": 120,
+    "dailyTokenLimit": 999999999,
+    "enabled": false
+  }
+]
